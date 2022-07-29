@@ -7,8 +7,8 @@ import org.openqa.selenium.support.How;
 public class loginPom  {
 
 	
-	@FindBy(how=How.XPATH,using="") private WebElement txt_email;
-	@FindBy(how=How.XPATH,using="") private WebElement txt_pass;
+	@FindBy(how=How.XPATH,using="//input[@id='email']") private WebElement txt_email;
+	@FindBy(how=How.XPATH,using="//input[@id='pass']") private WebElement txt_pass;
 	
 	public WebElement getTxt_email() {
 		return txt_email;
