@@ -13,7 +13,8 @@ public class TC_001 extends BaseClass{
         loginPom login=PageFactory.initElements(driver, loginPom.class);
 
                  
-    	 login.getTxt_email().sendKeys("abc");
+    	 login.getTxt_email().sendKeys(excel.getExceldata("Sign", 0, 0));
+    	 login.getTxt_pass().sendKeys(excel.getExceldata("Sign", 0, 1));
      }
 	
 	
